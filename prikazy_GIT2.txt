@@ -1,0 +1,84 @@
+## Prikazy:
+HELP
+- pomoc, ukázka pøíkazù
+----------------------------------------------------------------
+INIT
+- založí se GITový repozitáø a tím ta složka funguje pro práci ukládání a pracování s gitem
+-objeví se tady i složka .git, která není vidìt(zobrazení - skryté položky)
+- pokud chci aby se mi o tu složku GIT nestaral, staèí smazat skrytou složku .git
+tím se pøijde o všechnu zálohu a všechny složky
+----------------------------------------------------------------
+STATUS
+- jsou to takové oèi
+- je to pøíkat který nám ukazuje co se dìje a kde zrovna se nacházíme
+-
+----------------------------------------------------------------
+ADD
+add + název souboru
+- pøidání souboru
+- pøidáváním do Staged area
+add + .
+- když chci pøidat více zmìn
+- pøidá zmìny celé složky, kde se zrovna nacházíme, kdybych byla v podsložce budu pøidávat jen to co je v podsložce
+
+----------------------------------------------------------------
+VIM
+i - insert, mžu psat
+escape - vrátím se do základního modu
+shift + zz - uložim to
+----------------------------------------------------------------
+LOG
+- vypíše naše pøedchozí commity
+-
+----------------------------------------------------------------
+TOUCH
+- touch + nazev(.txt,jpg,...)
+nedává se pøed to git
+vloží nám název pøímo z konzole
+----------------------------------------------------------------
+CHECKOUT
+- pøíkaz pro zmìnu vìtve a nebo posouvání v èase zmìn
+checkout + jmeno(886B - staèí napsat první 4 písmenka + TAB a nebo èísla názvu commitu)
+checkout + master - pokud chceme zpátky na poslední commit(hlavní vìtve master)
+----------------------------------------------------------------
+BRANCH
+vìtev
+- vypíše všechny vìtve a hvezdièka oznaèuje kde se nacházíme
+branch + nazev(nejaké nové vetve. kterou chceme udelat)
+----------------------------------------------------------------
+MERGE
+- když chci mergovat do nìjaké vìtve, musím na ní pøeskoèit, napø.z testovací do mastera
+jej to pøidání nìjaké vìtve do hlavní
+----------------------------------------------------------------
+MKDIR
+mkdir + nazev - zalozeni novo slozky v prikazovém øádku
+----------------------------------------------------------------
+CD
+cd + nazev - jde se do té složky
+cd .. - jde o složku výše
+----------------------------------------------------------------
+git remote add origin git@github.com:Pecinge/......git
+pøidá do našeho repozitáøe odkaz nebo adresu toho našeho vzdáleného repozitáøe na GITHUBu
+----------------------------------------------------------------
+PUSH
+git push -u origin main - napsat jenn na zaèátku pak už používat jen git push
+git push
+pušneme náš repozitáø(naši složku) na vzdálený repozitáø
+ git push --set-upstream origin main tohle napsat aby to zkopírovalo do vzdal.repozit.
+----------------------------------------------------------------
+MAIN
+git branch -M main - pøepnu se na main
+cd .. pøepnu nazpìt na MASTER
+----------------------------------------------------------------
+
+1. add -A
+1. add *
+1. commit -m "Commit message"
+1. commit --amend
+1. diff
+1. .gitignore
+1. checkout -b
+1. branch -d
+1. tag
+1. log --oneline
+1. rm --cached
